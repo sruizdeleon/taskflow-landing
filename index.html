@@ -6,247 +6,567 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>taskflow-landing</title>
   </head>
+  <body>
     <!-- HEADER -->
-    <header class="bg-surface-light/80 dark:bg-surface-dark sticky top-0 z-50 backdrop-blur-xs">
-      <div class="max-w-7xl flex justify-between items-center mx-auto px-4 md:px-6 lg:px-8 md:6 lg:8 py-4">
+    <header
+      class="bg-surface-light/80 dark:bg-surface-dark sticky top-0 z-50 backdrop-blur-xs"
+    >
+      <div
+        class="md:6 lg:8 mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-6 lg:px-8"
+      >
         <!-- Logo -->
-        <div class="h-8 min-w-28 aspect-auto">
-          <img class="h-full object-contain" src="src\assets\logo_flow.png" alt="Logo TaskFlow" />
-        </div>
-  
-        <div class="flex gap-3 justify-center items-center">
-        <!-- Header mobile navigation -->
-          <a href="#menu" class="h-8 w-8 md:hidden cursor-pointer">
-            <img src="src\assets\burger-bar.png" alt="menú hamburguesa">
+        <a href="#" class="aspect-auto h-8 min-w-28">
+          <img
+            class="h-full object-contain"
+            src="src\assets\logo_flow.png"
+            alt="Logo TaskFlow"
+          />
+        </a>
+
+        <div class="flex items-center justify-center gap-3">
+          <!-- Header mobile navigation -->
+          <a href="#menu" class="h-8 w-8 cursor-pointer md:hidden">
+            <img src="src\assets\burger-bar.png" alt="menú hamburguesa" />
           </a>
-        <!-- Header navigation -->
-           <nav class="hidden md:flex">
-             <ul class="flex flex-row list-none gap-4">
-               <li class="flex items-center"><a class="text-brand-600 hover:text-brand-400 font-semibold" href="#funciones">Funciones</a></li>
-               <li class="flex items-center"><a class="text-brand-600 hover:text-brand-400  font-semibold" href="#precios">Precios</a></li>
-               <li class="flex items-center"><a class="text-brand-600 hover:text-brand-400 font-semibold" href="#testimonios">Testimonios</a></li>
-               <li class="flex items-center"><a class="px-3 py-2 rounded-md bg-brand-600 hover:bg-brand-700 transition-colors duration-200 cursor-pointer text-font-light font-semibold" href="#cta">Empezar gratis</a></li>
-             </ul>
-           </nav>
-           <button id="theme-toggle" class="text-2xl cursor-pointer">☀️</button>   
-          </div>
+          <!-- Header navigation -->
+          <nav class="hidden md:flex">
+            <ul class="flex list-none flex-row gap-4">
+              <li class="flex items-center">
+                <a
+                  class="text-brand-600 hover:text-brand-400 font-semibold"
+                  href="#funciones"
+                  >Funciones</a
+                >
+              </li>
+              <li class="flex items-center">
+                <a
+                  class="text-brand-600 hover:text-brand-400 font-semibold"
+                  href="#precios"
+                  >Precios</a
+                >
+              </li>
+              <li class="flex items-center">
+                <a
+                  class="text-brand-600 hover:text-brand-400 font-semibold"
+                  href="#testimonios"
+                  >Testimonios</a
+                >
+              </li>
+              <li class="flex items-center">
+                <a
+                  class="bg-brand-600 hover:bg-brand-700 text-font-light cursor-pointer rounded-md px-3 py-2 font-semibold transition-colors duration-200"
+                  href="#cta"
+                  >Empezar gratis</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <button id="theme-toggle" class="cursor-pointer text-2xl">☀️</button>
+        </div>
       </div>
     </header>
 
     <!-- MAIN CONTENT -->
     <main>
-
       <!-- Sección Hero -->
-      <section id="hero" class="w-full flex flex-col justify-center items-center py-32 gap-4  bg-linear-to-t from-brand-50 to-surface-light dark:from-brand-800 dark:to-surface-dark px-4 md:px-6 lg:px-8">
-        <p class="text-brand-600 dark:text-brand-100 font-bold bg-brand-100 dark:bg-brand-900 rounded-full px-6 py-1 animate-bounce">La herramienta #1 en productividad</p>
-        <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-center text-brand-600 dark:text-brand-100">Organiza tu equipo.<br>Potencia tus proyectos</h1>
-        <p class="text-base md:text-lg lg:text-xl text-font-gray-200 dark:text-brand-100 text-center">TaskFlow te ayuda a gestionar tu trabajo<br>de manera más eficiente y colaborativa.</p>
-        <div class="flex flex-col justify-center w-full items-center md:flex-row gap-4">
-          <a class="w-full max-w-40 text-center px-3 py-2 rounded-md bg-brand-600 dark:bg-brand-600  hover:bg-brand-700 transition-colors duration-200 cursor-pointer text-font-light" href="#started-free" >Empieza gratis</a>
-          <a href="#demo" class="w-full max-w-40 text-center dark:text-brand-100 dark:hover:text-brand-600 px-3 py-2 rounded-md border-2 border-border-light hover:bg-surface-gray-100 transition-colors duration-200 cursor-pointer text-font-gray-200">Ver demo</a>
+      <section
+        id="hero"
+        class="from-brand-50 to-surface-light dark:from-brand-800 dark:to-surface-dark flex w-full flex-col items-center justify-center gap-4 bg-linear-to-t px-4 py-32 md:px-6 lg:px-8"
+      >
+        <p
+          class="text-brand-600 dark:text-brand-100 bg-brand-100 dark:bg-brand-900 animate-bounce rounded-full px-6 py-1 font-bold"
+        >
+          La herramienta #1 en productividad
+        </p>
+        <h1
+          class="text-brand-600 dark:text-brand-100 text-center text-3xl font-extrabold tracking-tight md:text-4xl lg:text-5xl"
+        >
+          Organiza tu equipo.<br />Potencia tus proyectos
+        </h1>
+        <p
+          class="text-font-gray-200 dark:text-brand-100 text-center text-base md:text-lg lg:text-xl"
+        >
+          TaskFlow te ayuda a gestionar tu trabajo<br />de manera más eficiente
+          y colaborativa.
+        </p>
+        <div
+          class="flex w-full flex-col items-center justify-center gap-4 md:flex-row"
+        >
+          <a
+            class="bg-brand-600 dark:bg-brand-600 hover:bg-brand-700 text-font-light w-full max-w-40 cursor-pointer rounded-md px-3 py-2 text-center transition-colors duration-200"
+            href="#started-free"
+            >Empieza gratis</a
+          >
+          <a
+            href="#demo"
+            class="dark:text-brand-100 dark:hover:text-brand-600 border-border-light hover:bg-surface-gray-100 text-font-gray-200 w-full max-w-40 cursor-pointer rounded-md border-2 px-3 py-2 text-center transition-colors duration-200"
+            >Ver demo</a
+          >
         </div>
       </section>
 
       <!-- Sección Funciones -->
-      <section id="funciones" class="flex flex-col items-center py-24 px-4 md:px-6 lg:px-8 bg-surface-gray-100 dark:bg-surface-gray-200">
-        <h2 class="dark:text-brand-100 text-3xl font-bold mb-3">Funciones</h2>
-        <p class="text-xl text-gray-600 dark:text-brand-100">Descubre todas las características de nuestro producto.</p>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl mt-16">
-        
-          <article class="flex group flex-col gap-2 border-2 border-border-light dark:border-brand-600 rounded-xl p-6 shadow-md hover:shadow-lg hover:shadow-brand-200 dark:hover:shadow-brand-600 transition duration-300">
-            <div class="bg-brand-200 p-3 rounded-md w-12 h-12 group-hover:scale-110 transition duration-300">
-              <img src="src\assets\kanban.png" alt="Kaban">
+      <section
+        id="funciones"
+        class="bg-surface-gray-100 dark:bg-surface-gray-200 flex flex-col items-center px-4 py-24 md:px-6 lg:px-8"
+      >
+        <h2 class="dark:text-brand-100 mb-3 text-3xl font-bold">Funciones</h2>
+        <p class="dark:text-brand-100 text-xl text-gray-600">
+          Descubre todas las características de nuestro producto.
+        </p>
+        <div
+          class="mt-16 grid w-full max-w-7xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
+        >
+          <article
+            class="group border-border-light dark:border-brand-600 hover:shadow-brand-200 dark:hover:shadow-brand-600 flex flex-col gap-2 rounded-xl border-2 p-6 shadow-md transition duration-300 hover:shadow-lg"
+          >
+            <div
+              class="bg-brand-200 h-12 w-12 rounded-md p-3 transition duration-300 group-hover:scale-110"
+            >
+              <img src="src\assets\kanban.png" alt="Kaban" />
             </div>
-            <h3 class="text-xl font-bold text-gray-900 dark:text-brand-100">Tablero Kanban</h3>
-            <p class="text-gray-500 dark:text-brand-100">Kanban board ssiow nran to versiatias an durban-scor to aoads proyects.</p>
+            <h3 class="dark:text-brand-100 text-xl font-bold text-gray-900">
+              Tablero Kanban
+            </h3>
+            <p class="dark:text-brand-100 text-gray-500">
+              Utiliza su tablero Kanban para poder organizar todas las tereas de
+              los proyectos de tu equipo.
+            </p>
           </article>
 
-          <article class="flex group flex-col gap-2 border-2 border-border-light dark:border-brand-600 rounded-xl p-6 shadow-md hover:shadow-lg hover:shadow-brand-200 dark:hover:shadow-brand-600 transition duration-300">
-            <div class="bg-brand-200 p-3 rounded-md w-12 h-12 group-hover:scale-110 transition duration-300">
-              <img src="src\assets\time-tracking.png" alt="Traking de tiempo">
+          <article
+            class="group border-border-light dark:border-brand-600 hover:shadow-brand-200 dark:hover:shadow-brand-600 flex flex-col gap-2 rounded-xl border-2 p-6 shadow-md transition duration-300 hover:shadow-lg"
+          >
+            <div
+              class="bg-brand-200 h-12 w-12 rounded-md p-3 transition duration-300 group-hover:scale-110"
+            >
+              <img src="src\assets\time-tracking.png" alt="Traking de tiempo" />
             </div>
-            <h3 class="text-xl font-bold text-gray-900 dark:text-brand-100">Time Tracking</h3>
-            <p class="text-gray-500 dark:text-brand-100">Kanban board ssiow nran to versiatias an durban-scor to aoads proyects.</p>
+            <h3 class="dark:text-brand-100 text-xl font-bold text-gray-900">
+              Time Tracking
+            </h3>
+            <p class="dark:text-brand-100 text-gray-500">
+              Controla el tiempo invertido en cada tarea para estimar mejor en
+              el futuro ciertas tareas que han generado retraso en los
+              proyectos.
+            </p>
           </article>
 
-          <article class="flex group flex-col gap-2 border-2 border-border-light dark:border-brand-600 rounded-xl p-6 shadow-md hover:shadow-lg hover:shadow-brand-200 dark:hover:shadow-brand-600 transition duration-300">
-            <div class="bg-brand-200 p-3 rounded-md w-12 h-12 group-hover:scale-110 transition duration-300">
-              <img src="src\assets\speech-bubble.png" alt="Chat">
+          <article
+            class="group border-border-light dark:border-brand-600 hover:shadow-brand-200 dark:hover:shadow-brand-600 flex flex-col gap-2 rounded-xl border-2 p-6 shadow-md transition duration-300 hover:shadow-lg"
+          >
+            <div
+              class="bg-brand-200 h-12 w-12 rounded-md p-3 transition duration-300 group-hover:scale-110"
+            >
+              <img src="src\assets\speech-bubble.png" alt="Chat" />
             </div>
-            <h3 class="text-xl font-bold text-gray-900 dark:text-brand-100">Chat integrado</h3>
-            <p class="text-gray-500 dark:text-brand-100">Kanban board ssiow nran to versiatias an durban-scor to aoads proyects.</p>
+            <h3 class="dark:text-brand-100 text-xl font-bold text-gray-900">
+              Chat integrado
+            </h3>
+            <p class="dark:text-brand-100 text-gray-500">
+              Necesitas aclarar algo rápido, puedes hacerlo a través del chat
+              interectivo individual o con todos los miembros del equipo.
+            </p>
           </article>
 
-          <article class="flex group flex-col gap-2 border-2 border-border-light dark:border-brand-600 rounded-xl p-6 shadow-md hover:shadow-lg hover:shadow-brand-200 dark:hover:shadow-brand-600 transition duration-300">
-            <div class="bg-brand-200 p-3 rounded-md w-12 h-12 group-hover:scale-110 transition duration-300">
-              <img src="src\assets\business-report.png" alt="Informes">
+          <article
+            class="group border-border-light dark:border-brand-600 hover:shadow-brand-200 dark:hover:shadow-brand-600 flex flex-col gap-2 rounded-xl border-2 p-6 shadow-md transition duration-300 hover:shadow-lg"
+          >
+            <div
+              class="bg-brand-200 h-12 w-12 rounded-md p-3 transition duration-300 group-hover:scale-110"
+            >
+              <img src="src\assets\business-report.png" alt="Informes" />
             </div>
-            <h3 class="text-xl font-bold text-gray-900 dark:text-brand-100">Informes y métricas</h3>
-            <p class="text-gray-500 dark:text-brand-100">Kanban board ssiow nran to versiatias an durban-scor to aoads proyects.</p>
+            <h3 class="dark:text-brand-100 text-xl font-bold text-gray-900">
+              Informes y métricas
+            </h3>
+            <p class="dark:text-brand-100 text-gray-500">
+              Ten todo el control del uso de la herramienta por medio de sus
+              métricas e informes totalmente personalizables.
+            </p>
           </article>
 
-          <article class="flex group flex-col gap-2 border-2 border-border-light dark:border-brand-600 rounded-xl p-6 shadow-md hover:shadow-lg hover:shadow-brand-200 dark:hover:shadow-brand-600 transition duration-300">
-            <div class="bg-brand-200 p-3 rounded-md w-12 h-12 group-hover:scale-110 transition duration-300">
-              <img src="src\assets\integration.png" alt="Integraciones">
+          <article
+            class="group border-border-light dark:border-brand-600 hover:shadow-brand-200 dark:hover:shadow-brand-600 flex flex-col gap-2 rounded-xl border-2 p-6 shadow-md transition duration-300 hover:shadow-lg"
+          >
+            <div
+              class="bg-brand-200 h-12 w-12 rounded-md p-3 transition duration-300 group-hover:scale-110"
+            >
+              <img src="src\assets\integration.png" alt="Integraciones" />
             </div>
-            <h3 class="text-xl font-bold text-gray-900 dark:text-brand-100">Integraciones</h3>
-            <p class="text-gray-500 dark:text-brand-100">Kanban board ssiow nran to versiatias an durban-scor to aoads proyects.</p>
+            <h3 class="dark:text-brand-100 text-xl font-bold text-gray-900">
+              Integraciones
+            </h3>
+            <p class="dark:text-brand-100 text-gray-500">
+              Si quieres sacarle aún más partido integra con otras herramientas
+              como: Outlook, Gmail, Slack, etc.
+            </p>
           </article>
 
-          <article class="flex group flex-col gap-2 border-2 border-border-light dark:border-brand-600 rounded-xl p-6 shadow-md hover:shadow-lg hover:shadow-brand-200 dark:hover:shadow-brand-600 transition duration-300">
-            <div class="bg-brand-200 p-3 rounded-md w-12 h-12 group-hover:scale-110 transition duration-300">
-              <img src="src\assets\cyber-security.png" alt="Seguridad">
+          <article
+            class="group border-border-light dark:border-brand-600 hover:shadow-brand-200 dark:hover:shadow-brand-600 flex flex-col gap-2 rounded-xl border-2 p-6 shadow-md transition duration-300 hover:shadow-lg"
+          >
+            <div
+              class="bg-brand-200 h-12 w-12 rounded-md p-3 transition duration-300 group-hover:scale-110"
+            >
+              <img src="src\assets\cyber-security.png" alt="Seguridad" />
             </div>
-            <h3 class="text-xl font-bold text-gray-900 dark:text-brand-100">Seguridad avanzada</h3>
-            <p class="text-gray-500 dark:text-brand-100">Kanban board ssiow nran to versiatias an durban-scor to aoads proyects.</p>
+            <h3 class="dark:text-brand-100 text-xl font-bold text-gray-900">
+              Seguridad avanzada
+            </h3>
+            <p class="dark:text-brand-100 text-gray-500">
+              Dispones de un panel interactivo de seguridad para salvaguardar
+              toda la información, con copias de seguridad, rotación de
+              contraseñas y mucho más.
+            </p>
           </article>
         </div>
       </section>
 
       <!-- Sección Precio -->
-      <section id="precios" class="flex flex-col items-center py-24 px-4 md:px-6 lg:px-8 dark:bg-surface-dark">
-        <h2 class="text-3xl font-bold mb-3 dark:text-brand-100">Nuestros precios</h2>
-        <p class="text-xl text-gray-600 dark:text-brand-100 ">Descubre todas nuestras tarifas con un servicio impecable.</p>
-        <div class="grid grid-cols-1 md:grid-cols-3 max-w-7xl gap-8 my-16">
-          <article class="flex flex-col items-center justify-center p-8 border-2 border-border-light rounded-2xl dark:bg-surface-gray-200">
+      <section
+        id="precios"
+        class="dark:bg-surface-dark flex flex-col items-center px-4 py-24 md:px-6 lg:px-8"
+      >
+        <h2 class="dark:text-brand-100 mb-3 text-3xl font-bold">
+          Nuestros precios
+        </h2>
+        <p class="dark:text-brand-100 text-xl text-gray-600">
+          Descubre todas nuestras tarifas con un servicio impecable.
+        </p>
+        <div class="my-16 grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-3">
+          <article
+            class="border-border-light dark:bg-surface-gray-200 flex flex-col items-center justify-center rounded-2xl border-2 p-8"
+          >
             <div class="flex flex-col items-center gap-2">
-              <h3 class="text-xl font-bold text-gray-900 dark:text-brand-500">Starter</h3>
-              <p class="text-4xl font-bold dark:text-brand-500">0€<span class="text-xl">/mes</span></p>
-              <p class="text-center dark:text-brand-100">Lorem ipsum dolor sit amet consectetor x free.</p>
+              <h3 class="dark:text-brand-500 text-xl font-bold text-gray-900">
+                Starter
+              </h3>
+              <p class="dark:text-brand-500 text-4xl font-bold">
+                0€<span class="text-xl">/mes</span>
+              </p>
+              <p class="dark:text-brand-100 text-center">
+                Para usuarios individuales que quieren experimentar con la
+                herramienta.
+              </p>
             </div>
-            <ul class="mt-4 w-full h-full list-disc pl-5 dark:text-brand-100">
+            <ul class="dark:text-brand-100 mt-4 h-full w-full list-disc pl-5">
               <li>3 proyectos.</li>
               <li>10 tareas por proyecto.</li>
               <li>1 GB de almacenamiento.</li>
             </ul>
-            <a class="mt-6 px-3 py-2 rounded-md border-2 dark:text-brand-100 dark:hover:text-brand-600 border-border-light  hover:bg-surface-gray-100 transition-colors duration-200 cursor-pointer text-font-gray-200 font-bold w-full text-center" href="#get-started">Comienza gratis</a>
+            <a
+              class="dark:text-brand-100 dark:hover:text-brand-600 border-border-light hover:bg-surface-gray-100 text-font-gray-200 mt-6 w-full cursor-pointer rounded-md border-2 px-3 py-2 text-center font-bold transition-colors duration-200"
+              href="#get-started"
+              >Comienza gratis</a
+            >
           </article>
 
-          <article class="flex flex-col items-center border-2º border-brand-600 rounded-2xl scale-105 relative ring-2 ring-brand-600 dark:bg-surface-gray-200">
-            <div class="absolute -top-4 bg-brand-600 px-4 py-1 rounded-full text-font-light"><p>Más popular</p></div>
-            <div class="flex flex-col items-center p-8 h-full">
+          <article
+            class="border-2º border-brand-600 ring-brand-600 dark:bg-surface-gray-200 relative flex scale-105 flex-col items-center rounded-2xl ring-2"
+          >
+            <div
+              class="bg-brand-600 text-font-light absolute -top-4 rounded-full px-4 py-1"
+            >
+              <p>Más popular</p>
+            </div>
+            <div class="flex h-full flex-col items-center p-8">
               <div class="flex flex-col items-center gap-2">
-                <h3 class="text-xl font-bold text-gray-900 dark:text-brand-500">Pro</h3>
-                <p class="text-4xl font-bold dark:text-brand-500">12€<span class="text-xl">/mes</span></p>
-                <p class="text-center dark:text-brand-100">Lorem ipsum dolor sit amet consectetor x free.</p>
+                <h3 class="dark:text-brand-500 text-xl font-bold text-gray-900">
+                  Pro
+                </h3>
+                <p class="dark:text-brand-500 text-4xl font-bold">
+                  12€<span class="text-xl">/mes</span>
+                </p>
+                <p class="dark:text-brand-100 text-center">
+                  Para equipos que quieren mejorar su coordinación y trabajo
+                  colaborativo.
+                </p>
               </div>
-              <ul class="mt-4 w-full h-full pl-5 list-disc dark:text-brand-100">
+              <ul class="dark:text-brand-100 mt-4 h-full w-full list-disc pl-5">
                 <li>Proyectos ilimitados.</li>
                 <li>Tareas por proyecto ilimitadas.</li>
                 <li>50 GB de almacenamiento.</li>
                 <li>Time tracking.</li>
                 <li>Integraciones.</li>
               </ul>
-              <a class="mt-6 px-3 py-2 rounded-md border-2 dark:text-brand-100 border-brand-600 bg-brand-600  hover:bg-brand-700  cursor-pointer text-font-light font-bold w-full text-center shadow-md hover:shadow-brand-600 hover:shadow-xs transition-shadow duration-200" href="#get-started">Comienza gratis</a>
+              <a
+                class="dark:text-brand-100 border-brand-600 bg-brand-600 hover:bg-brand-700 text-font-light hover:shadow-brand-600 mt-6 w-full cursor-pointer rounded-md border-2 px-3 py-2 text-center font-bold shadow-md transition-shadow duration-200 hover:shadow-xs"
+                href="#get-started"
+                >Comienza gratis</a
+              >
             </div>
           </article>
 
-          <article class="flex flex-col items-center justify-center p-8 border-3 border-border-light rounded-2xl dark:bg-surface-gray-200">
+          <article
+            class="border-border-light dark:bg-surface-gray-200 flex flex-col items-center justify-center rounded-2xl border-3 p-8"
+          >
             <div class="flex flex-col items-center gap-2">
-              <h3 class="text-xl font-bold text-gray-900 dark:text-brand-500">Enterprise</h3>
-              <p class="text-4xl font-bold dark:text-brand-500">49€<span class="text-xl">/mes</span></p>
-              <p class="text-center dark:text-brand-100">Lorem ipsum dolor sit amet consectetor x free.</p>
+              <h3 class="dark:text-brand-500 text-xl font-bold text-gray-900">
+                Enterprise
+              </h3>
+              <p class="dark:text-brand-500 text-4xl font-bold">
+                49€<span class="text-xl">/mes</span>
+              </p>
+              <p class="dark:text-brand-100 text-center">
+                Para organizaciones que quieren elevar su productividad al
+                siguiente nivel por medio de una herramienta robusta.
+              </p>
             </div>
-            <ul class="mt-4 w-full h-full list-disc pl-5 dark:text-brand-100">
+            <ul class="dark:text-brand-100 mt-4 h-full w-full list-disc pl-5">
               <li>Todo lo del Pro.</li>
               <li>10 tareas por proyecto.</li>
               <li>SSO & SAML.</li>
               <li>Soporte 24/7.</li>
               <li>SLA de 99.9%.</li>
             </ul>
-            <a class="mt-6 px-3 py-2 rounded-md border-2 dark:text-brand-100 dark:hover:text-brand-600 border-border-light hover:bg-surface-gray-100 transition-colors duration-200 cursor-pointer text-font-gray-200 font-bold w-full text-center" href="#get-started">Comienza gratis</a>
+            <a
+              class="dark:text-brand-100 dark:hover:text-brand-600 border-border-light hover:bg-surface-gray-100 text-font-gray-200 mt-6 w-full cursor-pointer rounded-md border-2 px-3 py-2 text-center font-bold transition-colors duration-200"
+              href="#get-started"
+              >Comienza gratis</a
+            >
           </article>
         </div>
       </section>
-      
+
       <!-- Sección Testiomonios -->
-      <section id="testimonios" class="flex flex-col w-full items-center pt-24 pb-56 bg-surface-gray-100 px-4 md:px-6 lg:px-8 dark:bg-surface-gray-200">
-        <h2 class="text-3xl font-bold dark:text-brand-100">Testimoniales</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 max-w-7xl my-16 gap-12">
-          <article class="flex flex-col bg-white dark:bg-gray-700 rounded-xl p-4">
-            <p class="dark:text-brand-100">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate."</p>
-            <div class="flex items-center gap-3 mt-4">
-              <div><img  class="rounded-full w-10 h-10" src="https://i.pravatar.cc/40?img=X" alt=""></div>
+      <section
+        id="testimonios"
+        class="bg-surface-gray-100 dark:bg-surface-gray-200 flex w-full flex-col items-center px-4 pt-24 pb-56 md:px-6 lg:px-8"
+      >
+        <h2 class="dark:text-brand-100 text-3xl font-bold">Testimoniales</h2>
+        <div class="my-16 grid max-w-7xl grid-cols-1 gap-12 md:grid-cols-3">
+          <article
+            class="flex flex-col rounded-xl bg-white p-4 dark:bg-gray-700"
+          >
+            <p class="dark:text-brand-100">
+              "Excelente herramienta. La empecé a utilizar individualmente para
+              probarla y cuando aprendí se la enseñé a mi equipo y están
+              encantados. Nosotros tenemos el plan Pro y la verdad que no
+              necesitamos más, nos ayuda a mantener todo controlado, estimar
+              tiempos, controlar riesgos y vivir un poquito mejor."
+            </p>
+            <div class="mt-4 flex items-center gap-3">
               <div>
-                <h5 class="font-bold dark:text-font-light">Sharal Enaty</h5>
-                <p class="text-sm text-gray-500 dark:text-font-light">Easnniairy Damolser</p>
+                <img
+                  class="h-10 w-10 rounded-full"
+                  src="https://i.pravatar.cc/40?img=X"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h5 class="dark:text-font-light font-bold">Laura Leal</h5>
+                <p class="dark:text-font-light text-sm text-gray-500">
+                  Directora de Marketing Digital en Casandra
+                </p>
+              </div>
             </div>
           </article>
-          <article class="flex flex-col bg-white dark:bg-gray-700 rounded-xl p-4">
-            <p class="dark:text-brand-100">"lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate."</p>
-            <div class="flex items-center gap-3 mt-4">
-              <div><img  class="rounded-full w-10 h-10" src="https://i.pravatar.cc/40?img=X" alt=""></div>
+          <article
+            class="flex flex-col rounded-xl bg-white p-4 dark:bg-gray-700"
+          >
+            <p class="dark:text-brand-100">
+              "Una maravilla. La verdad que tener herramientas así con una
+              versión gratuita es genial. Soy autónomo y aunque no tengo
+              empleados a mi cargo la uso para mi organización personal.
+              Controlo mis proyectos, mis tiempos y puedo incluso tener copias
+              de seguridad de mis tareas. ¡Simplemente estupendo!"
+            </p>
+            <div class="mt-4 flex items-center gap-3">
               <div>
-                <h5 class="font-bold dark:text-font-light">Sharal Enaty</h5>
-                <p class="text-sm text-gray-500 dark:text-font-light">Easnniairy Damolser</p>
+                <img
+                  class="h-10 w-10 rounded-full"
+                  src="https://i.pravatar.cc/40?img=X"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h5 class="dark:text-font-light font-bold">Pedro Canales</h5>
+                <p class="dark:text-font-light text-sm text-gray-500">
+                  Desarrollador Backend
+                </p>
+              </div>
             </div>
           </article>
-          <article class="flex flex-col bg-white dark:bg-gray-700 rounded-xl p-4">
-            <p class="dark:text-brand-100">"lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate."</p>
-            <div class="flex items-center gap-3 mt-4">
-              <div><img  class="rounded-full w-10 h-10" src="https://i.pravatar.cc/40?img=X" alt=""></div>
+          <article
+            class="flex flex-col rounded-xl bg-white p-4 dark:bg-gray-700"
+          >
+            <p class="dark:text-brand-100">
+              "En nuestra compañía hemos apostado por utilizar las metodologías
+              Agile y fue un acierto contar con Flow como herramienta. Los
+              empleados están encantados, pueden organizar sus proyectos por
+              departamentos o, incluso, proyectos transversales en los que
+              coordinarse. Sin duda es una herramienta que recomendaría a las
+              empresas que necesiten una solución robusta y testada en el
+              mercado."
+            </p>
+            <div class="mt-4 flex items-center gap-3">
               <div>
-                <h5 class="font-bold dark:text-font-light">Sharal Enaty</h5>
-                <p class="text-sm text-gray-500 dark:text-font-light">Easnniairy Damolser</p>
+                <img
+                  class="h-10 w-10 rounded-full"
+                  src="https://i.pravatar.cc/40?img=X"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h5 class="dark:text-font-light font-bold">Pablo Peñol</h5>
+                <p class="dark:text-font-light text-sm text-gray-500">
+                  CIO en Technostar
+                </p>
+              </div>
             </div>
           </article>
         </div>
       </section>
     </main>
-    
+
     <!-- FOOTER -->
-    <footer class="flex flex-col items-center relative bg-surface-dark px-4 md:px-6 lg:px-8">
-      
+    <footer
+      class="bg-surface-dark relative flex flex-col items-center px-4 md:px-6 lg:px-8"
+    >
       <!-- Section CTA -->
-      <section id="cta" class="absolute -top-40 md:-top-30 flex flex-col w-full items-center px-2.5">
-        <div class="flex flex-col md:flex-row items-center justify-center md:max-w-7xl gap-8 py-6 md:py-8 px-10 md:px-16 bg-linear-to-l from-brand-600 to-purple-600 rounded-4xl">
+      <section
+        id="cta"
+        class="absolute -top-40 flex w-full flex-col items-center px-2.5 md:-top-30"
+      >
+        <div
+          class="from-brand-600 flex flex-col items-center justify-center gap-8 rounded-4xl bg-linear-to-l to-purple-600 px-10 py-6 md:max-w-7xl md:flex-row md:px-16 md:py-8"
+        >
           <div class="w-full md:max-w-1/2">
-            <h3 class="text-xl font-bold text-font-light">Únete a miles de equipos</h3>
-            <p class="pt-2 text-font-light">Únete a miles de equipos, si pooperte inductes anums mas por mucho a miles de equipos.</p>
+            <h3 class="text-font-light text-xl font-bold">
+              Únete a miles de equipos
+            </h3>
+            <p class="text-font-light pt-2">
+              Contacta con nosotros y te enseñaremos cómo elevar al siguiente
+              nivel tu productividad y la de tu equipo.
+            </p>
           </div>
           <div class="relative flex w-full md:max-w-1/2">
-            <input class="w-full h-14 pl-4 pr-36 bg-white/50 text-font-light focus:outline-none focus:ring-2 focus:ring-white/50 rounded-lg" type="email" placeholder="Email emeas..."></input>
-            <button class="absolute right-4 top-2 w-28 h-10 px-3 py-1 rounded-md bg-brand-600 hover:bg-brand-700 text-font-light transition-colors duration-200 cursor-pointer">Comentar</button>
+            <input
+              class="text-font-light h-14 w-full rounded-lg bg-white/50 pr-36 pl-4 focus:ring-2 focus:ring-white/50 focus:outline-none"
+              type="email"
+              placeholder="Email..."
+            />
+            <button
+              class="bg-brand-600 hover:bg-brand-700 text-font-light absolute top-2 right-4 h-10 w-28 cursor-pointer rounded-md px-3 py-1 transition-colors duration-200"
+            >
+              Contactar
+            </button>
           </div>
         </div>
       </section>
 
-
       <!-- Footer navigation -->
-      <section class="pt-28 pb-4 flex flex-col w-full items-center">
-        <div class="grid grid-cols-2 gap-8 md:grid-cols-4 max-w-7xl w-full text-center md:text-left">
-          <div class="flex justify-center h-8 min-w-28 aspect-auto">
-            <img class="h-full object-contain" src="src\assets\logo_flow.png" alt="Logo TaskFlow" />
+      <section class="flex w-full flex-col items-center pt-28 pb-4">
+        <div
+          class="grid w-full max-w-7xl grid-cols-2 gap-8 text-center md:grid-cols-4 md:text-left"
+        >
+          <div class="flex aspect-auto h-8 min-w-28 justify-center">
+            <img
+              class="h-full object-contain"
+              src="src\assets\logo_flow.png"
+              alt="Logo TaskFlow"
+            />
           </div>
           <div>
-            <h5 class="mb-2 text-font-gray-100 hover:text-font-light font-bold"> Producto</h5>
+            <h5 class="text-font-gray-100 hover:text-font-light mb-2 font-bold">
+              Producto
+            </h5>
             <nav>
               <ul>
-                <li><a class="text-font-gray-100 hover:text-font-light font-light" href="#funciones">Funciones</a></li>
-                <li><a class="text-font-gray-100 hover:text-font-light font-light" href="#precios">Precios</a></li>
-                <li><a class="text-font-gray-100 hover:text-font-light font-light" href="#integraciones">Integraciones</a></li>
-                <li><a class="text-font-gray-100 hover:text-font-light font-light" href="#changelog">Changelog</a></li>
+                <li>
+                  <a
+                    class="text-font-gray-100 hover:text-font-light font-light"
+                    href="#funciones"
+                    >Funciones</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-font-gray-100 hover:text-font-light font-light"
+                    href="#precios"
+                    >Precios</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-font-gray-100 hover:text-font-light font-light"
+                    href="#integraciones"
+                    >Integraciones</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-font-gray-100 hover:text-font-light font-light"
+                    href="#changelog"
+                    >Changelog</a
+                  >
+                </li>
               </ul>
             </nav>
           </div>
           <div>
-            <h5 class="mb-2 text-font-gray-100 hover:text-font-light font-bold">Empresa</h5>
+            <h5 class="text-font-gray-100 hover:text-font-light mb-2 font-bold">
+              Empresa
+            </h5>
             <nav>
               <ul>
-                <li><a class="text-font-gray-100 hover:text-font-light font-light" href="#sobre-nosotros">Sobre nosotros</a></li>
-                <li><a class="text-font-gray-100 hover:text-font-light font-light" href="#blog">Blog</a></li>
-                <li><a class="text-font-gray-100 hover:text-font-light font-light" href="#careers">Careers</a></li>
-                <li><a class="text-font-gray-100 hover:text-font-light font-light" href="#contacto">Contacto</a></li>
+                <li>
+                  <a
+                    class="text-font-gray-100 hover:text-font-light font-light"
+                    href="#sobre-nosotros"
+                    >Sobre nosotros</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-font-gray-100 hover:text-font-light font-light"
+                    href="#blog"
+                    >Blog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-font-gray-100 hover:text-font-light font-light"
+                    href="#careers"
+                    >Careers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-font-gray-100 hover:text-font-light font-light"
+                    href="#contacto"
+                    >Contacto</a
+                  >
+                </li>
               </ul>
             </nav>
           </div>
           <div>
-            <h5 class="mb-2 text-font-gray-100 font-bold">Legal</h5>
+            <h5 class="text-font-gray-100 mb-2 font-bold">Legal</h5>
             <nav>
               <ul>
-                <li><a class="text-font-gray-100 hover:text-font-light font-light" href="#privacidad">Privacidad</a></li>
-                <li><a class="text-font-gray-100 hover:text-font-light font-light" href="#terminos">Términos</a></li>
-                <li><a class="text-font-gray-100 hover:text-font-light font-light" href="#cookies">Cookies</a></li>
+                <li>
+                  <a
+                    class="text-font-gray-100 hover:text-font-light font-light"
+                    href="#privacidad"
+                    >Privacidad</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-font-gray-100 hover:text-font-light font-light"
+                    href="#terminos"
+                    >Términos</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-font-gray-100 hover:text-font-light font-light"
+                    href="#cookies"
+                    >Cookies</a
+                  >
+                </li>
               </ul>
             </nav>
           </div>
@@ -255,7 +575,11 @@
 
       <!-- Rights -->
       <section class="flex w-full flex-col items-center">
-        <p class="text-font-gray-100 w-full max-w-7xl text-center border-t-2 border-border py-2 text-font-gray">&copy; 2026 TaskFlow. All rights reserved.</p>
+        <p
+          class="text-font-gray-100 border-border text-font-gray w-full max-w-7xl border-t-2 py-2 text-center"
+        >
+          &copy; 2026 TaskFlow. All rights reserved.
+        </p>
       </section>
     </footer>
     <script type="module" src="/src/main.js"></script>
